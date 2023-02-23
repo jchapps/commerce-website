@@ -53,7 +53,7 @@ const Classes = ({ setSelectedPage }: Props) => {
   return (
     <section id="classes" className="w-full bg-primary-100 pb-40 pt-[4rem]">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Classes)}
       >
         <motion.div
           className="mx-auto w-5/6"
@@ -89,5 +89,8 @@ const Classes = ({ setSelectedPage }: Props) => {
     </section>
   );
 };
+
+
+
 
 export default Classes;

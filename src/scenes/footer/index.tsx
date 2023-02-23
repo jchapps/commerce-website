@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Links</h4>
-          <p className="my-5">Careers</p>
+          <a className="my-5 cursor-pointer" href='https://github.com/jchapps'>Github</a>
           <p className="my-5">Teachers</p>
           <p>Yoga</p>
         </div>
