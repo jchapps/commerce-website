@@ -46,7 +46,7 @@ const home = ({ setSelectedPage }: Props) => {
                 <h2>Stretch and Relax</h2>
               </div>
             </div>
-            <p className="mt-8 text-sm">
+            <p className="mt-8 text-md">
               Yoga classes that will expand your mind and muscles, established
               in 2010. Shoulders tense from programming? Sign up to our group
               sessions now!
@@ -65,7 +65,7 @@ const home = ({ setSelectedPage }: Props) => {
             className="mt-8 flex items-center gap-8"
           >
             <ActionButton setSelectedPage={setSelectedPage}>
-              Sign up!
+              Contact Us
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"

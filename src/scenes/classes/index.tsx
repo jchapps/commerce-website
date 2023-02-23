@@ -51,7 +51,7 @@ const classes: Array<ClassType> = [
 
 const Classes = ({ setSelectedPage }: Props) => {
   return (
-    <section id="classes" className="w-full bg-primary-100 py-40">
+    <section id="classes" className="w-full bg-primary-100 pb-40 pt-[4rem]">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
       >
@@ -69,13 +69,7 @@ const Classes = ({ setSelectedPage }: Props) => {
           <div className="md:w-3/5">
             <HeadingText>Classes</HeadingText>
             <p className="py-5">
-              We have various classes. We have various classesWe have various
-              classesWe have various classesWe have various classesWe have
-              various classesWe have various classesWe have various classesWe
-              have various classesWe have various classesWe have various
-              classesWe have various classesWe have various classesWe have
-              various classesWe have various classesWe have various classesWe
-              have various.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
         </motion.div>
