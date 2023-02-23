@@ -2,7 +2,7 @@ import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/TitleText.png";
-import HomePageSubtitle from "@/assets/SubTitle.png"
+import HomePageSubtitle from "@/assets/SubTitle.png";
 import HomePageGraphic from "@/assets/HomePageGraphic.svg";
 import PartnerRedBull from "@/assets/PartnerRedBull.png";
 import PartnerForbes from "@/assets/PartnerForbes.png";
@@ -20,7 +20,10 @@ const home = ({ setSelectedPage }: Props) => {
   return (
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* image and header */}
-      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)} className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6">
+      <motion.div
+        onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
+        className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+      >
         {/* main header */}
         <motion.div
           initial="hidden"
@@ -44,12 +47,23 @@ const home = ({ setSelectedPage }: Props) => {
               </div>
             </div>
             <p className="mt-8 text-sm">
-              Yoga classes that will expand your mind and muscles, established in 2010. Shoulders
-              tense from programming? Sign up to our group sessions now!
+              Yoga classes that will expand your mind and muscles, established
+              in 2010. Shoulders tense from programming? Sign up to our group
+              sessions now!
             </p>
           </div>
           {/* actions */}
-          <div className="mt-8 flex items-center gap-8">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+            className="mt-8 flex items-center gap-8"
+          >
             <ActionButton setSelectedPage={setSelectedPage}>
               Sign up!
             </ActionButton>
@@ -60,17 +74,17 @@ const home = ({ setSelectedPage }: Props) => {
             >
               <p>Learn More</p>
             </AnchorLink>
-          </div>
+          </motion.div>
         </motion.div>
         {/* image */}
         <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
-          <img src={HomePageGraphic} alt="graphic" className="w-72 h-96 mt-3" />
+          <img src={HomePageGraphic} alt="graphic" className="mt-3 h-96 w-72" />
         </div>
       </motion.div>
       {/* partners */}
       {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
-          <div className="mx-auto w-5/6 flex justify-center">
+          <div className="mx-auto flex w-5/6 justify-center">
             <div className="flex w-3/5 items-center justify-between gap-8">
               <img src={PartnerRedBull} alt="Redbull" />
               <img src={PartnerFortune} alt="Redbull" />
