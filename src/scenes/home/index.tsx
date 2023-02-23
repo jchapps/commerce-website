@@ -3,7 +3,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/TitleText.png";
 import HomePageSubtitle from "@/assets/SubTitle.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.svg";
+import HomePageGraphic from "@/assets/HomePageGraphic.png";
 import PartnerRedBull from "@/assets/PartnerRedBull.png";
 import PartnerForbes from "@/assets/PartnerForbes.png";
 import PartnerFortune from "@/assets/PartnerFortune.png";
@@ -78,7 +78,7 @@ const home = ({ setSelectedPage }: Props) => {
         </motion.div>
         {/* image */}
         <div className="flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end">
-          <img src={HomePageGraphic} alt="graphic" className="mt-3 h-96 w-72" />
+          <img src={HomePageGraphic} alt="graphic" className="mt-3 h-[33rem] w-[25rem]" />
         </div>
       </motion.div>
       {/* partners */}
