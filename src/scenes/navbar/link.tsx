@@ -7,7 +7,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const link = ({ page, selectedPage, setSelectedPage }: Props) => {
+const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
   const lowerCasePages = page.toLowerCase().replace(/ /g, "") as SelectedPage;
   return (
     <AnchorLink
@@ -22,4 +22,4 @@ const link = ({ page, selectedPage, setSelectedPage }: Props) => {
   );
 };
 
-export default link;
+export default Link;
